@@ -11,6 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix' => '', 'as' => 'list.'], function () {
+    Route::get('/', function () {
+        return view('welcome');
+    });
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['prefix' => 'room', 'as' => 'room.', 'namespace' => 'Room', 'middleware' => ['auth']], function () {
+    Route::get('/', 'RoomController@index')->name('index');
+    Route::resource('news', 'NewsController');
+    Route::resource('photos', 'PhotoController');
 });
