@@ -1,0 +1,101 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*
+  Main page
+ */
+.room {
+  width: 100%;
+  height: 100%;
+}
+
+.content_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_h100 {
+  height: 100%;
+}
+
+/*
+  Posts
+ */
+.posts {
+  column-count: 3
+}
+
+@media(max-width:992px) {
+  .posts {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .posts {
+    column-count: 1;
+  }
+}
+
+.posts__item {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+.posts__body {
+  margin-bottom: 1.65rem;
+}
+
+.panel-sub-heading_spacer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+  Likes
+ */
+.likes {
+  font-size: 3rem;
+
+  .likes_active {
+    color: #ff0100;
+  }
+}
+
+/*
+  Image posts
+ */
+.form-img {
+  margin: 0 auto 3rem auto;
+}
+
+.form-img_width {
+  max-width: 400px
+}
+
+.form-img_hover:hover {
+  cursor: pointer;
+}
+
+.panel-body__img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*
+  Editors
+ */
+.editors {
+  display: inline-block;
+}
