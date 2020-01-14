@@ -1,14 +1,20 @@
 ## Test task
 
+---
+
 Task:
 
 Имеются таблицы: пользователей, новостей и фотографий на базе стека Laravel, Vue и postgers(или mysql) реализовать функционал управления новостями и фотографиями (CRUD) и возможность пользователем поставить лайк новости или фотографии. 
+
+---
 
 Ссылка на реализацию (prod link): https://bcalx.ru
 
 Тестовый пользователь (Test user):
 логин (Login): test@test.ru
 пароль (Password): 123456
+
+---
 
 Mini CRUD news/photos Laravel+Vue project
 
