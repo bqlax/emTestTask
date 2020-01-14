@@ -1,5 +1,11 @@
 ## Test task
 
+Ссылка (Link): https://bcalx.ru
+
+Тестовый пользователь (Test user):
+логин (Login): test@test.ru
+пароль (Password): 123456
+
 Mini CRUD news/photos Laravel+Vue project
 
 Main dependences:
